@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-image: url(./ai-nuclear-energy-background-future-innovation-disruptive-technology.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      h1 {
+        text-align: center;
+        color: #fff;
+      }
+      form {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 5px;
+        backdrop-filter: blur(16px) saturate(80%);
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #fff;
+      }
+      input[type="text"],
+      input[type="password"],
+      input[type="email"],
+      input[type="tel"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      button {
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+      }
+      .btn-17,
+      .btn-17 *,
+      .btn-17 :after,
+      .btn-17 :before,
+      .btn-17:after,
+      .btn-17:before {
+        border: 0 solid;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+      .btn-17 {
+        -webkit-tap-highlight-color: transparent;
+        -webkit-appearance: button;
+        background-color: #000;
+        background-image: none;
+        color: #fff;
+        cursor: pointer;
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+          Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+        font-size: 100%;
+        font-weight: 900;
+        line-height: 1.5;
+        margin: 0;
+        -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+        padding: 0;
+        text-transform: uppercase;
+      }
+      .btn-17:disabled {
+        cursor: default;
+      }
+      .btn-17:-moz-focusring {
+        outline: auto;
+      }
+      .btn-17 svg {
+        display: block;
+        vertical-align: middle;
+      }
+      .btn-17 [hidden] {
+        display: none;
+      }
+      .btn-17 {
+        border-radius: 99rem;
+        border-width: 2px;
+        padding: 0.8rem 3rem;
+        z-index: 0;
+      }
+      .btn-17,
+      .btn-17 .text-container {
+        overflow: hidden;
+        position: relative;
+      }
+      .btn-17 .text-container {
+        display: block;
+        mix-blend-mode: difference;
+      }
+      .btn-17 .text {
+        display: block;
+        position: relative;
+      }
+      .btn-17:hover .text {
+        -webkit-animation: move-up-alternate 0.3s forwards;
+        animation: move-up-alternate 0.3s forwards;
+      }
+      @-webkit-keyframes move-up-alternate {
+        0% {
+          -webkit-transform: translateY(0);
+          transform: translateY(0);
+        }
+        50% {
+          -webkit-transform: translateY(80%);
+          transform: translateY(80%);
+        }
+        51% {
+          -webkit-transform: translateY(-80%);
+          transform: translateY(-80%);
+        }
+        to {
+          -webkit-transform: translateY(0);
+          transform: translateY(0);
+        }
+      }
+      @keyframes move-up-alternate {
+        0% {
+          -webkit-transform: translateY(0);
+          transform: translateY(0);
+        }
+        50% {
+          -webkit-transform: translateY(80%);
+          transform: translateY(80%);
+        }
+        51% {
+          -webkit-transform: translateY(-80%);
+          transform: translateY(-80%);
+        }
+        to {
+          -webkit-transform: translateY(0);
+          transform: translateY(0);
+        }
+      }
+      .btn-17:after,
+      .btn-17:before {
+        --skew: 0.2;
+        background: #fff;
+        content: "";
+        display: block;
+        height: 102%;
+        left: calc(-50% - 50% * var(--skew));
+        pointer-events: none;
+        position: absolute;
+        top: -104%;
+        -webkit-transform: skew(calc(150deg * var(--skew)))
+          translateY(var(--progress, 0));
+        -ms-transform: skew(calc(150deg * var(--skew)))
+          translateY(var(--progress, 0));
+        transform: skew(calc(150deg * var(--skew)))
+          translateY(var(--progress, 0));
+        -webkit-transition: -webkit-transform 0.2s ease;
+        transition: -webkit-transform 0.2s ease;
+        transition: transform 0.2s ease;
+        transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+        width: 100%;
+      }
+      .btn-17:after {
+        --progress: 0%;
+        left: calc(50% + 50% * var(--skew));
+        top: 102%;
+        z-index: -1;
+      }
+      .btn-17:hover:before {
+        --progress: 100%;
+      }
+      .btn-17:hover:after {
+        --progress: -102%;
+      }
+
+      #welcomingPage {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #f2f2f2;
+        padding: 20px;
+        border-radius: 5px;
+        text-align: center;
+      }
+      #welcomingPage ul {
+        list-style-type: none;
+        padding: 0;
+        text-align: left;
+      }
+      #welcomingPage li {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="out-container">
+      <form id="registrationForm" action="./Openning.html">
+        <h1>Sign Up</h1>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required /><br /><br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required /><br /><br />
+        <label for="mobile">Mobile:</label>
+        <input
+          type="text"
+          id="mobile"
+          name="mobile"
+          required
+          pattern="^01[0|1|2|5][0-9]{8}$"
+        /><br /><br />
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option></select
+        ><br /><br />
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" required></textarea><br /><br />
+        <label for="Password">Password:</label>
+        <input
+          type="Password"
+          id="Password"
+          name="Password"
+          pattern="(?=.*[a-z])(?=.*[A-Z]).{8,}"
+          title="Must contain at least 8 characters, including upper and lower case letters."
+          required
+        /><br /><br />
+        <button class="btn-17">
+          <span class="text-container">
+            <span class="text">submit</span>
+          </span>
+        </button>
+      </form>
+    </div>
+    <script>
+      document
+        .getElementById("registrationForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          var name = document.getElementById("name").value.trim();
+          var email = document.getElementById("email").value.trim();
+          var mobile = document.getElementById("mobile").value.trim();
+          var gender = document.getElementById("gender").value;
+          var address = document.getElementById("address").value.trim();
+          var password = document.getElementById("Password").value;
+          if (name === "") {
+            alert("Name is required");
+            return false;
+          }
+          var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+          if (!emailPattern.test(email)) {
+            alert("Please enter a valid email address");
+            return false;
+          }
+          if (mobile === "" || !/^\d{11}$/.test(mobile)) {
+            alert("Please enter a valid 11-digit mobile number");
+            return false;
+          }
+          if (gender === "") {
+            alert("Please select a gender");
+            return false;
+          }
+          if (address === "") {
+            alert("Address is required");
+            return false;
+          }
+
+          if (password.length < 8) {
+            alert("Password must be at least 8 characters long");
+            return false;
+          }
+          this.submit();
+        });
+    </script>
+  </body>
+</html>
+
+<!-- ************************************************************************************** -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a img {
+        width: 150px;
+        margin: 10px;
+        border: 2px solid black;
+        border-radius: 12px;
+      }
+
+      a img:hover {
+        border: 2px solid brown;
+        transform: scale(1.1);
+        transition: all 0.5s ease-in-out;
+      }
+
+      div {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        font-family: "Courier New", Courier, monospace;
+        background-color: black;
+      }
+      #main {
+        width: 400px;
+        margin-bottom: 20px;
+        border-radius: 12px;
+      }
+
+      section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid brown;
+        padding: 30px 5px;
+        border-radius: 12px;
+        background: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>Select Image 📷</h1>
+      <div>
+        <img
+          id="main"
+          src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHdlYnNpdGV8ZW58MHwwfDB8fHwy"
+          alt=""
+        />
+      </div>
+      <div id="imagesClick">
+        <a
+          href="https://unsplash.com/photos/assorted-color-abstract-painting-tZc3vjPCk-Q"
+          target="_blank"
+          ><img
+            src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHdlYnNpdGV8ZW58MHwwfDB8fHwy"
+        /></a>
+        <a
+          href="https://unsplash.com/photos/silver-imac-turned-on-inside-room-DtDlVpy-vvQ"
+          target="_blank"
+          ><img
+            src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?q=80&w=1769&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        /></a>
+        <a
+          href="https://unsplash.com/photos/turned-on-silver-imac-ir5lIkVFqC4"
+          target="_blank"
+          ><img
+            src="https://images.unsplash.com/photo-1426024120108-99cc76989c71?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHdlYnNpdGV8ZW58MHwwfDB8fHwy"
+        /></a>
+        <a
+          href="https://unsplash.com/photos/magic-keyboard-beside-mug-and-click-pen-VieM9BdZKFo"
+          target="_blank"
+          ><img
+            src="https://images.unsplash.com/photo-1518655048521-f130df041f66?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHdlYnNpdGV8ZW58MHwwfDB8fHwy"
+        /></a>
+        <a
+          href="https://unsplash.com/photos/people-sitting-down-near-table-with-assorted-laptop-computers-SYTO3xs06fU"
+          target="_blank"
+          ><img
+            src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fHdlYnNpdGV8ZW58MHwwfDB8fHwy"
+        /></a>
+      </div>
+    </section>
+    <script src="../Java Script/Task.js"></script>
+  </body>
+</html> -->

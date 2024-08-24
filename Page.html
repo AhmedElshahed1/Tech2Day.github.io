@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page</title>
+    <style>
+      :root {
+        --primary-color: #314584;
+        --secondary-color: #ffffff;
+        --text-color: #000000;
+        --background-color: #f0f0f0;
+        --accent-color: #2a0909;
+        --blur-effect: blur(10px) saturate(90%);
+        --border-radius: 15px;
+        --padding: 20px;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: var(--background-color);
+        background-image: url(./6006295.jpg);
+        backdrop-filter: var(--blur-effect);
+      }
+
+      header {
+        background-color: var(--secondary-color);
+        padding: 15px 0;
+        text-align: center;
+        border-bottom: 1px solid #ccc;
+        transition: all 0.5s ease;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .logo img {
+        max-height: 50px; /* Adjust the height as needed */
+        border-radius: var(--border-radius);
+      }
+
+      .logo span {
+        font-size: 24px;
+        font-weight: bold;
+        color: var(--primary-color);
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: var(--border-radius);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(16px) saturate(100%);
+        transition: all 0.3s ease;
+      }
+
+      nav ul li {
+        transition: transform 0.3s ease;
+      }
+
+      nav ul li:hover {
+        transform: scale(1.1);
+      }
+
+      nav ul li a {
+        display: block;
+        text-decoration: none;
+        color: var(--text-color);
+        font-size: 18px;
+        padding: 10px 15px;
+        transition: color 0.3s ease, transform 0.3s ease;
+      }
+
+      nav ul li a:hover {
+        color: var(--primary-color);
+      }
+
+      .hero {
+        backdrop-filter: var(--blur-effect);
+        background-repeat: no-repeat;
+        background-position: top-left;
+        background-size: 200px 200px;
+        color: #fff;
+        text-align: center;
+        padding: 100px 0;
+        height: 200px;
+        border: 1px solid var(--secondary-color);
+        border-radius: var(--border-radius);
+        margin: 15px;
+        transition: all 0.3s ease;
+      }
+
+      .hero h1 {
+        margin: 0;
+        font-size: 48px;
+      }
+
+      .hero p {
+        font-size: 20px;
+        margin-top: 10px;
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: var(--padding);
+        border: 1px solid var(--secondary-color);
+        border-radius: var(--border-radius);
+        margin: 30px auto;
+        width: calc(100% - 60px);
+        max-width: 1000px;
+      }
+
+      .product {
+        background-color: var(--secondary-color);
+        border: 1px solid var(--secondary-color);
+        margin-bottom: 20px;
+        padding: var(--padding);
+        text-align: center;
+        width: 65%;
+        max-width: 500px;
+        border-radius: var(--border-radius);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+      }
+
+      .product:hover {
+        transform: translateY(-5px);
+      }
+
+      .product img {
+        max-width: 100%;
+        height: auto;
+        border-radius: var(--border-radius);
+      }
+
+      .product h2 {
+        font-size: 24px;
+        margin: 20px 0 10px;
+      }
+
+      .product p {
+        font-size: 16px;
+        color: var(--accent-color);
+      }
+
+      aside {
+        width: 25%;
+        color: #ffffff;
+        float: right;
+        padding: var(--padding);
+        border: 1px solid var(--secondary-color);
+        margin: 20px;
+        border-radius: var(--border-radius);
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+
+      footer {
+        background-color: var(--primary-color);
+        text-align: center;
+        padding: var(--padding) 0;
+        font-size: 14px;
+        color: var(--secondary-color);
+        border-top: 1px solid #ccc;
+        backdrop-filter: var(--blur-effect);
+      }
+
+      button {
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        height: 40px;
+        width: 160px;
+        border: 1px solid var(--secondary-color);
+        border-radius: var(--border-radius);
+        transition: background-color 0.3s;
+      }
+
+      button:hover {
+        background-color: #273a6d; /* Darkened primary color */
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        nav {
+          flex-direction: column;
+          gap: 10px;
+          align-items: center;
+        }
+
+        .container {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .product {
+          width: 100%;
+        }
+
+        aside {
+          width: 100%;
+          margin: 20px 0;
+        }
+
+        .hero {
+          padding: 50px 0;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="./IMG-20240711-WA0010.jpg" alt="Tech2Day Logo" />
+          <span>Tech2Day</span>
+        </div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Contacts</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">About Me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>This is my website</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+        expedita!
+      </p>
+    </section>
+
+    <aside>
+      <h2>Trend</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+        repudiandae aliquid velit praesentium corrupti necessitatibus, nesciunt
+        numquam aut ab perferendis, aspernatur incidunt esse, quos dolor?
+        Explicabo impedit ad vitae. Cupiditate!
+      </p>
+    </aside>
+
+    <main class="container">
+      <article class="product">
+        <img
+          src="./cv.jpg"
+          alt="CV"
+        />
+        <h2>CV Writing</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores
+          repellat accusamus optio est fugit adipisci in deleniti minus, sint
+          quo consectetur praesentium, corporis quod, et quasi magni nobis
+          inventore temporibus.
+        </p>
+        <button>Learn more ></button>
+      </article>
+
+      <article class="product">
+        <img
+          src="./design.jpg"
+          alt="Design"
+        />
+        <h2>Designing</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores
+          repellat accusamus optio est fugit adipisci in deleniti minus, sint
+          quo consectetur praesentium, corporis quod, et quasi magni nobis
+          inventore temporibus.
+        </p>
+        <button>Learn more ></button>
+      </article>
+
+      <article class="product">
+        <img
+        src="./Power.jpg"
+          alt="PowerPoint"
+        />
+        <h2>PowerPoint making</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores
+          repellat accusamus optio est fugit adipisci in deleniti minus, sint
+          quo consectetur praesentium, corporis quod, et quasi magni nobis
+          inventore temporibus.
+        </p>
+        <button>Learn more ></button>
+      </article>
+      <article class="product">
+        <img
+          src="./Data.jpg"
+          alt=" Data"
+        />
+        <h2>Data Entery</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores
+          repellat accusamus optio est fugit adipisci in deleniti minus, sint
+          quo consectetur praesentium, corporis quod, et quasi magni nobis
+          inventore temporibus.
+        </p>
+        <button>Learn more ></button>
+      </article>
+      <article class="product">
+        <img
+          src="./pd.jpg"
+          alt="Convert"
+        />
+        <h2>Convert PDF to Word</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores
+          repellat accusamus optio est fugit adipisci in deleniti minus, sint
+          quo consectetur praesentium, corporis quod, et quasi magni nobis
+          inventore temporibus.
+        </p>
+        <button>Learn more ></button>
+      </article>
+    </main>
+
+    <footer>
+      <p>&copy; Tech2Day</p>
+    </footer>
+
+    <script></script>
+  </body>
+</html>
