@@ -1,0 +1,55 @@
+body {
+  background-image: url(cover.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  margin: 0;
+}
+h1 {
+  color: aliceblue;
+  text-align: center;
+}
+.in-container {
+  color: rgb(255, 255, 255);
+  height: 500px;
+  margin: 20px 10px 20px 15px;
+}
+.out-container {
+ float: fixed;
+  background-color: rgba(0, 0, 0, 0.468);
+  width: 900px;
+  padding: 50px 20px 20px;
+  padding-left: 400px;
+  margin: 100px;
+}
+.r1 {
+  color: aliceblue;
+  text-align: center;
+  margin: 30px 10px 20px 15px;
+  background-size: 300px;
+}
+
+input {
+  width: 400px;
+  height: 25px;
+}
+.r3 {
+  color: rgb(255, 255, 255);
+  background-color: rgb(144, 14, 167);
+  text-align: center;
+  background-size: 250px;
+  width: 190px;
+  border: 10px;
+  border-radius: 15px;
+  height: 50px;
+}
+.in-container {
+  color: aliceblue;
+  width: fit-content;
+  padding-top: 50px;
+  height: 550px;
+  opacity: 100%;
+  width: 500px;
+  border-style: solid;
+  text-align: center;
+}
